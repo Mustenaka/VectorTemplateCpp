@@ -95,3 +95,11 @@ Vector2 operator/(float scalar, const Vector2 &vec)
 {
     return Vector2(vec.x / scalar, vec.y / scalar);
 }
+
+// 格式化输出字符串
+std::string Vector2::toString() const
+{
+    std::ostringstream oss;
+    oss << "(" << this->x << ", " << this->y << ")";
+    return oss.str();
+}

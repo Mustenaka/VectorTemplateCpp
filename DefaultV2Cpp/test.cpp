@@ -1,10 +1,15 @@
 #include <iostream>
 #include "Vector2.h"
 
-int main() {
+int main()
+{
     // 创建两个向量
     Vector2 vec1(3.0f, 4.0f);
     Vector2 vec2(1.0f, 2.0f);
+
+    // 原始向量数据
+    std::cout << "vec1: " << vec1.toString() << std::endl;
+    std::cout << "vec2: " << vec2.toString() << std::endl;
 
     // 计算点积和叉乘
     float dotProduct = vec1.Dot(vec2);

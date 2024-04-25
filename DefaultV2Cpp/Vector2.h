@@ -2,6 +2,8 @@
 #define VECTOR2_H
 
 #include <cmath>
+#include <string>
+#include <sstream>
 
 struct Vector2
 {
@@ -50,6 +52,9 @@ struct Vector2
 
     // 求的单位向量
     Vector2 normalize(const Vector2 &v);
+
+    // 格式化输出字符串
+    std::string toString() const;
 };
 
 #endif // VECTOR2_H
